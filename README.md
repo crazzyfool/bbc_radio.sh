@@ -1,16 +1,16 @@
 bbc_radio.sh
 ============
 
-A simple bash script to play BBC Radio at the terminal.  Supports the following stations:
+A simple bash script to play BBC Radio at the terminal.  Supports the following stations (options):
 
-1. BBC Radio One (**bbc_one**)
-2. BBC Radio Two (**bbc_two**)
-3. BBC Radio Three (**bbc_three**)
-4. BBC Radio Four (**bbc_fourfm**)
-5. BBC Radio Five Live (****)
-6. BBC Radio 6 Music (****)
+1. BBC Radio One (**radio_one**)
+2. BBC Radio Two (**radio_two**)
+3. BBC Radio Three (**radio_three**)
+4. BBC Radio Four (**radio_fourfm**)
+5. BBC Radio Five Live (**radio_five_live**)
+6. BBC Radio 6 Music (**6music**)
 
-The script will first try to play using _mpc_, failing that, _mplayer_.  For example, to play Radio One with mplayer:
+The script will first try to play using _mpc_, failing that, _mplayer_.  For example, to play Radio One with mplayer, the URL would look like:
 
 ```console
 mplayer http://a.files.bbci.co.uk/media/live/manifesto/audio/simulcast/hls/uk/sbr_high/ak/bbc_radio_one.m3u8
@@ -25,7 +25,7 @@ mpc http://a.files.bbci.co.uk/media/live/manifesto/audio/simulcast/hls/uk/sbr_hi
 Setup
 -----
 
-To get setup, clone the git repository.
+To get setup, clone the git repository and make sure the file is executable.
 
 ```console
 cd ~
@@ -38,8 +38,6 @@ Make sure the script is executable.
 ```console
 chmod -v u+x ~/bbc_radio.sh/bbc_radio.sh
 ```
-
-
 
 Usage
 -----
@@ -56,4 +54,3 @@ Or run with a station as an option.
 ```console
 ./bbc_radio.sh radio_one
 ```
-
