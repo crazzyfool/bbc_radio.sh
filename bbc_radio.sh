@@ -4,7 +4,7 @@
 # ------------
 #
 # Simple bash script to play BBC Radio at the terminal.
-# Requires and internet connection and either mpc or mplayer.
+# Requires an internet connection and either mpc or mplayer.
 #
 
 play() {
